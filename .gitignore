@@ -5,10 +5,17 @@ __pycache__/
 *.log
 *.png
 *.xml
+*.jpg
+*.jpeg
+*.zip
 *.egg-info/
+raw/
 env/
 dist/
 venv/
 build/
+mfvt_coco/
+roboflow_yolo/
+ZipDatasets/
 .env
 .venv
