@@ -16,6 +16,9 @@ venv/
 build/
 test/
 train/
+mfvt_coco/
 ZipDatasets/
+roboflow_yolo/
+andrewmvd_voc/
 .env
 .venv
