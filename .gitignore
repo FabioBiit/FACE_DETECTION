@@ -11,6 +11,7 @@ __pycache__/
 *.txt
 *.yaml
 *.pt
+*.cache
 *.egg-info/
 env/
 dist/
