@@ -10,6 +10,7 @@ __pycache__/
 *.zip
 *.txt
 *.yaml
+*.pt
 *.egg-info/
 env/
 dist/
