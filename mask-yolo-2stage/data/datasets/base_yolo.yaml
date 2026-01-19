@@ -1,0 +1,7 @@
+path: C:\Users\kyros\OneDrive\Desktop\FACE_DETECTION\mask-yolo-2stage\data\raw\processed\base_yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: mask
+  1: no_mask

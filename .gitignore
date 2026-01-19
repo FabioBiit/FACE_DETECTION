@@ -9,6 +9,7 @@ __pycache__/
 *.jpeg
 *.zip
 *.txt
+*.yaml
 *.egg-info/
 env/
 dist/
