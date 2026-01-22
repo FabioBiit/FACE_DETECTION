@@ -4,14 +4,14 @@
 
 andrewmvd: https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download \
 trngvhong: https://www.kaggle.com/datasets/trngvhong/mfvt-dataset?utm_source=chatgpt.com \
-yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme \
+yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme
 
 # Struttura Folder Adottata: 
 
-mask-yolo-2stage/
-  data/
-    raw/
-      andrewmvd_voc/
+mask-yolo-2stage/ \
+  data/ \
+    raw/ \
+      andrewmvd_voc/ \
 		annotation/
 		images/
       mfvt_coco/
