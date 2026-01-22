@@ -8,7 +8,6 @@ yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme
 
 # Struttura Folder Adottata: 
 
-## Project Structure
 ```
 mask-yolo-2stage/
   data/
