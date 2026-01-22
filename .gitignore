@@ -6,8 +6,6 @@ __pycache__/
 *.xml
 *.zip
 *.txt
-*.yaml
-*.pt
 *.cache
 *.egg-info/
 env/
