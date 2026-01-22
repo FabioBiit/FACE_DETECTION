@@ -2,9 +2,9 @@
 
 # Link Dowload per Dataset Immagini:
 
-andrewmvd: https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download\
-trngvhong: https://www.kaggle.com/datasets/trngvhong/mfvt-dataset?utm_source=chatgpt.com\
-yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme\
+andrewmvd: https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download \
+trngvhong: https://www.kaggle.com/datasets/trngvhong/mfvt-dataset?utm_source=chatgpt.com \
+yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme \
 
 # Struttura Folder Adottata: 
 
