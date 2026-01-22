@@ -11,14 +11,14 @@ def resolve_repo_path(p: str) -> str:
 
 
 def main():
-    # Scegli modello base: yolov8n (veloce) / yolov8s (meglio)
+    # Modello base: yolov8n (veloce) / yolov8s (meglio)
     model = YOLO("yolov8s.pt")
 
     model.train(
         data=resolve_repo_path("datasets/person_crops_yolo.yaml"),
-        imgsz=540,  # era default 640
-        epochs=5,   # l'elaborazione richiede molto tempo, quindi ho diminuito le epoche
-        batch=5,   # =-1 autobatch
+        imgsz=640,  # era default 640
+        epochs=30,   # l'elaborazione richiede molto tempo, quindi ho diminuito le epoche
+        batch=-1,   # =-1 autobatch
         device=0,   # GPU 0
         workers=4
     )

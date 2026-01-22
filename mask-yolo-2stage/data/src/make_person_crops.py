@@ -116,7 +116,7 @@ def main():
                         fy1 -= y1; fy2 -= y1
                         new_lines.append(xyxy_to_yolo(cls_id, fx1, fy1, fx2, fy2, cw, ch))
 
-                # se non c'è nessuna faccia nel crop, salta (eviti rumore)
+                # se non c'è nessuna faccia nel crop, skip
                 if not new_lines:
                     continue
 

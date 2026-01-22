@@ -84,7 +84,7 @@ def ingest_andrewmvd_voc(src_root: Path) -> List[Tuple[Path, List[str]]]:
         print(f"[SKIP] AndrewMVD non trovato: {src_root}")
         return []
 
-    # prova a trovare images e annotations
+    # images e annotations
     images_dir = src_root / "images"
     ann_dir = src_root / "annotations"
     if not images_dir.exists():
@@ -201,8 +201,8 @@ def ingest_roboflow_yolo(src_root: Path) -> List[Tuple[Path, List[str]]]:
             if not lab_path.exists():
                 continue
             lines = [ln.strip() for ln in lab_path.read_text(encoding="utf-8").splitlines() if ln.strip()]
-            # Qui assumo che Roboflow abbia già "mask/no_mask" o simile.
-            # Se le classi sono diverse, va fatto un mapping.
+            # Roboflow abbia classico ha il mapping fatto come "mask/no_mask"
+            # Se le classi sono diverse, va fatto un remapping.
             items.append((img_path, lines))
     if items:
         print(f"[Roboflow] Ingestiti {len(items)} samples (labels YOLO già pronte).")
