@@ -8,29 +8,32 @@ yolo-6hrdo: https://universe.roboflow.com/yolo-6hrdo/facemask-xafme
 
 # Struttura Folder Adottata: 
 
+## Project Structure
+```
 mask-yolo-2stage/
-├── data/
-│   ├── raw/
-│   │   ├── andrewmvd_voc/
-│   │   │   ├── annotation/
-│   │   │   └── images/
-│   │   ├── mfvt_coco/
-│   │   │   ├── test/
-│   │   │   ├── images/
-│   │   │   └── class.txt
-│   │   └── roboflow_yolo/
-│   │       ├── test/
-│   │       ├── train/
-│   │       └── valid/
-│   └── processed/
-│       ├── base_yolo/
-│       └── person_crops_yolo/
-├── datasets/
-│   ├── base_yolo.yaml
-│   └── person_crops_yolo.yaml
-├── src/
-│   ├── prepare_base_yolo.py
-│   ├── make_person_crops.py
-│   ├── train_mask_yolo.py
-│   ├── infer_pipeline.py
-│   └── shell_pipe_orchestrator.py
+  data/
+    raw/
+      andrewmvd_voc/
+        annotation/
+        images/
+      mfvt_coco/
+        test/
+        images/
+        class.txt
+      roboflow_yolo/
+        test/
+        train/
+        valid/
+    processed/
+      base_yolo/
+      person_crops_yolo/
+  datasets/
+    base_yolo.yaml
+    person_crops_yolo.yaml
+  src/
+    prepare_base_yolo.py
+    make_person_crops.py
+    train_mask_yolo.py
+    infer_pipeline.py
+    shell_pipe_orchestrator.py
+```
