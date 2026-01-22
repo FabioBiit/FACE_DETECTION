@@ -3,10 +3,7 @@ __pycache__/
 *.pyo
 *.lock
 *.log
-*.png
 *.xml
-*.jpg
-*.jpeg
 *.zip
 *.txt
 *.yaml
@@ -23,5 +20,6 @@ mfvt_coco/
 ZipDatasets/
 roboflow_yolo/
 andrewmvd_voc/
+raw/
 .env
 .venv
