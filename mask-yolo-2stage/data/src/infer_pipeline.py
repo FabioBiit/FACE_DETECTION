@@ -1,5 +1,8 @@
 # src/infer_pipeline.py
-# comando per inferenza su immagine singola: python src/infer_pipeline.py --img path/to/image.jpg
+# comando per inferenza su immagine singola: 
+# python .\src\infer_pipeline.py --img "raw\processed\base_yolo\images\test\NOMEIMG.jpg" 
+# --mask_model "runs_trained\detect\train\weights\best.pt"     
+
 from __future__ import annotations
 from pathlib import Path
 import cv2
@@ -18,7 +21,7 @@ def main():
 
     p = argparse.ArgumentParser()
     p.add_argument("--img", type=str, required=True)
-    p.add_argument("--mask_model", type=str, default="runs/detect/train/weights/best.pt")
+    p.add_argument("--mask_model", type=str, required=True)
     p.add_argument("--person_model", type=str, default="yolov8n.pt")
     p.add_argument("--out_dir", type=str, default="outputs")
     p.add_argument("--conf_person", type=float, default=0.25)
