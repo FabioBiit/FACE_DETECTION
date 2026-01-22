@@ -1,5 +1,3 @@
-### APRI IN EDIT COSì DA VEDERE INDENTAZIONE CORRETTA
-
 # Link Dowload per Dataset Immagini:
 
 andrewmvd: https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download \
