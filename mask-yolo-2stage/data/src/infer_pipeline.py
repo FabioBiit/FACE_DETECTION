@@ -1,3 +1,5 @@
+# src/infer_pipeline.py
+# comando per inferenza su immagine singola: python src/infer_pipeline.py --img path/to/image.jpg
 from __future__ import annotations
 from pathlib import Path
 import cv2

@@ -1,3 +1,5 @@
+# src/train_mask_yolo.py
+# comando per addestrare il modello mask/no_mask (one-shot): python src/train_mask_yolo.py
 from __future__ import annotations
 from pathlib import Path
 from ultralytics import YOLO
@@ -11,7 +13,7 @@ def resolve_repo_path(p: str) -> str:
 
 
 def main():
-    # Modello base: yolov8n (veloce) / yolov8s (meglio)
+    # Modello base: yolov8n (nano) / yolov8s (small)
     model = YOLO("yolov8s.pt")
 
     model.train(

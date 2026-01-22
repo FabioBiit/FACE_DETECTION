@@ -1,4 +1,5 @@
 # src/prepare_base_yolo.py
+# comando per preparare base_yolo (one-shot): python src/prepare_base_yolo.py
 from __future__ import annotations
 import json
 import random

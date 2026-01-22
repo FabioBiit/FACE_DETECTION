@@ -1,4 +1,5 @@
 # src/make_person_crops.py
+# comando per creare i crop delle persone (one-shot): python src/make_person_crops.py
 from __future__ import annotations
 from pathlib import Path
 import cv2
