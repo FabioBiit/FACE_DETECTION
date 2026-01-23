@@ -1,4 +1,5 @@
 # src/shell_pipe_orchestrator.py
+# cd mask-yolo-2stage > cd data
 # comando per lanciare le pipe in sequenza: python .\src\shell_pipe_orchestrator.py
 from __future__ import annotations
 import subprocess
