@@ -185,7 +185,7 @@ def ingest_roboflow_yolo(src_root: Path) -> List[Tuple[Path, List[str]]]:
             if not lab_path.exists():
                 continue
             lines = [ln.strip() for ln in lab_path.read_text(encoding="utf-8").splitlines() if ln.strip()]
-            # Roboflow abbia classico ha il mapping fatto come "mask/no_mask"
+            # Roboflow con classico mapping "mask/no_mask"
             # Se le classi sono diverse, va fatto un remapping.
             items.append((img_path, lines))
     if items:
