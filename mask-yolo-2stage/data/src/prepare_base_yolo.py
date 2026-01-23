@@ -75,12 +75,6 @@ def split_assign(n: int, seed: int = 42, train=0.8, val=0.1, test=0.1) -> List[s
 
 
 def ingest_andrewmvd_voc(src_root: Path) -> List[Tuple[Path, List[str]]]:
-    """
-    Atteso:
-      src_root/
-        images/  (o direttamente immagini)
-        annotations/ (xml)
-    """
     if not src_root.exists():
         print(f"[SKIP] AndrewMVD non trovato: {src_root}")
         return []
@@ -136,13 +130,6 @@ def ingest_andrewmvd_voc(src_root: Path) -> List[Tuple[Path, List[str]]]:
 
 
 def ingest_yolo_dataset(src_root: Path) -> List[Tuple[Path, List[str]]]:
-    """
-    Dataset YOLO-style:
-      src_root/
-        train/images + train/labels
-        val/images + val/labels   (oppure val/...)
-        test/images  + test/labels
-    """
     if not src_root.exists():
         print(f"[SKIP] YOLO dataset non trovato: {src_root}")
         return []
@@ -175,12 +162,8 @@ def ingest_yolo_dataset(src_root: Path) -> List[Tuple[Path, List[str]]]:
 
 def ingest_roboflow_yolo(src_root: Path) -> List[Tuple[Path, List[str]]]:
     """
-    Atteso Roboflow YOLO classico:
-      src_root/
-        train/images, train/labels
-        val/images, val/labels
-        test/images, test/labels
-    Nota: qui non convertiamo, ingestiamo già label YOLO e rimappiamo classi se servisse.
+    Roboflow YOLO classico:
+    Nota: qui non convertiamo, ingestiamo già label YOLO (rimappiamo classi se servisse)
     """
     if not src_root.exists():
         print(f"[SKIP] Roboflow non trovato: {src_root}")

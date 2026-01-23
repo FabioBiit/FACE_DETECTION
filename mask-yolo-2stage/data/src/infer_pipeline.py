@@ -22,7 +22,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--img", type=str, required=True)
     p.add_argument("--mask_model", type=str, required=True)
-    p.add_argument("--person_model", type=str, default="yolov8n.pt")
+    p.add_argument("--person_model", type=str, default="yolov8s.pt")
     p.add_argument("--out_dir", type=str, default="outputs")
     p.add_argument("--conf_person", type=float, default=0.25)
     p.add_argument("--conf_mask", type=float, default=0.25)

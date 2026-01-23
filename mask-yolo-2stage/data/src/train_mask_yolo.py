@@ -18,9 +18,9 @@ def main():
 
     model.train(
         data=resolve_repo_path("datasets/person_crops_yolo.yaml"),
-        imgsz=640,  # era default 640
-        epochs=30,   # l'elaborazione richiede molto tempo, quindi ho diminuito le epoche
-        batch=-1,   # =-1 autobatch
+        imgsz=640,  # Default a 640
+        epochs=30,  # l'elaborazione richiede molto tempo, quindi ho diminuito le epoche da 50 a 30
+        batch=-1,   # -1 autobatch
         device=0,   # GPU 0
         workers=4
     )

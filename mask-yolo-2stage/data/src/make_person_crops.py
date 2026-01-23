@@ -55,7 +55,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--base_yaml", type=str, default="datasets/base_yolo.yaml")
     p.add_argument("--out_root", type=str, default="raw/processed/person_crops_yolo")
-    p.add_argument("--person_model", type=str, default="yolov8n.pt")
+    p.add_argument("--person_model", type=str, default="yolov8s.pt")
     p.add_argument("--conf", type=float, default=0.25)
     args = p.parse_args()
 
@@ -132,13 +132,13 @@ def main():
     out_yaml = Path("datasets") / "person_crops_yolo.yaml"
     out_yaml.write_text(
         f"""path: {out_root.resolve()}
-train: images/train
-val: images/val
-test: images/test
-names:
-  0: mask
-  1: no_mask
-""",
+            train: images/train
+            val: images/val
+            test: images/test
+            names:
+            0: mask
+            1: no_mask
+            """,
         encoding="utf-8",
     )
     print(f"[OK] person_crops dataset: {out_root}")
